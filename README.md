@@ -7,3 +7,5 @@ singkat dulu aja kali ya deskripsinya, lagi mengmalas
 *ke depannya kemungkinan ada update, tergantung mood sama bahasa pemrograman/stack teknologi apa yang sedang saya pelajari, maklum juga klo jelek makin ke sini makin males bikin dokumentasi mending langsung projek
 
 tqtqtq
+
+![image](https://github.com/JackBerck/code-documentation/assets/68431607/09b9c175-dd77-4f85-b9fe-138535a0a94b)
