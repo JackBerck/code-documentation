@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Latihan 7, form pada html</title>
+  </head>
+  <body>
+    <form>
+  <!-- tag form digunakan untuk mengisi data atau formulir yg akan digunakan oleh user, tag form didalamnya ada tag label, input, textarea, select, dan button -->
+  <!-- tag label berfungsi sebagai label atau penanda bahwa text tersebut digunakan untuk menginputkan sesuatu yg sudah diarahkan seperti username, pass,dll -->
+  <!-- tag input adalah tag untuk user menginputkan atau mengisikan sesuatu, typenya ada text(mengisikan sebagian kecil text), password(mengisikan password), checkbox(centang pada suatu maksud dari box), dan radio(lingkaran persetujuan) -->
+  <!-- tag textarea adalah tag yg diguanakan user untuk mengisikan sebagian besar text -->
+  <!-- tag select adalah tag yg digunakan user untuk menentukan suatu list atau disebut juga dengan list box/combo box, didalamnya terdapat tag option -->
+  <!-- tag button adalah tag yg digunakan untuk user menekan suatu, typenya ada submit(mengirim), reset(mereset data), dan button(pencetan) -->
+  <!-- dalam penggunaan form disarankan harus dihubungkam satu sama lain dengan menggunakan attribut id untuk penandanya dan attribut for untuk menuju ke penanda, sehingga value for dan id sama -->
+  <!-- dalam penggunaam form juga bisa menggunakan grouping dengan attribut name, sehingga tag satu dan yg lain memiliki value name yg sama -->
+      <label for="nama">Nama Anda :</label>
+      <input type="text" id="nama"/>
+        <br>
+        <br>
+      <label for="pass">Password :</label>
+      <input type="password" id="pass"/>
+        <br>
+        <br>
+        <p>Jenis Kelamin :</p>
+      <input type="radio" name="kelamin" id="cowok"/><label for="cowok">Cowok</label>
+      <input type="radio" name="kelamin" id="cewek"/><label for="cewek">Cewek</label>
+        <br>
+        <br>
+        <p>Makanan Kesukaan :</p>
+        <input type="checkbox" name="fav" id="bakso" /><label for="bakso">Bakso</label>
+        <input type="checkbox" name="fav" id="mayam" /><label for="mayam">Mie Ayam</label>
+        <input type="checkbox" name="fav" id="seblak" /><label for="seblak">Seblak</label>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Kirim</button>
+    </form>
+  </body>
+</html>
