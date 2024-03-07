@@ -1,0 +1,28 @@
+h3 {
+  font-family: Monospace;
+  font-size: 50px;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-style: oblique;
+  line-height: normal;
+}
+
+p {
+  font: oblique normal lighter 30px/50px verdana;
+}
+
+/* font-family, digunakan untuk menentukan font jenis apa yg akan digunakan, valuenya ada banyak font, rumusnya name font, generic font*/
+
+/* font-size, untuk mengatur besar kecilnya ukuran font, valuenya ada px, %, em */
+
+/* font-variant, untuk mengatur variasi font, valuenya ada normal, small-caps (membuat font menjadi huruf kapital tapi kecil cuman font pertamanya yg besar) */
+
+/* font-weight, berfungsi sebagai pengatur ketebalan font, valuenya ada normal, lighter(kurus), bold(tebal), bolder(sangat tebal), 100-900(besarnya ketebalan) */
+
+/* font-style, untuk membuat style miring, valuenya ada normal, italic (miring italia), oblique(miring biasa) */
+
+/* line-height, berfungsi sebagai pengatur jarak antar pargraf atau baris, valuenya ada px, em, normal */
+
+/* rumus untuk syntax css font yaitu font: font style, font-variant, font-weight, font size/line-height font-family */
+
+/* yg wajib digunakan saat menggunakan rumus adalah font-size, line-height dan font-family */

@@ -1,0 +1,35 @@
+h3 {
+  color: violet;
+  text-decoration: line-through;
+}
+
+p {
+  text-indent: 30px;
+  text-transform: capitalize;
+  word-spacing: 10px;
+  color: darkgrey;
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* color, untuk mengubah warna font, ada nama colornya(dalam bahasa inggris), hexadecimal (bilangan dan angka warna dari 0 sampai f dengan jumlah 6 karakter), rgb (red, green, blue) */
+
+/* text-align, untuk meratakan text,valuenya ada left (rata kiri), right(rata kanan), center(rata tengah), justify(rata kanan kiri) */
+
+/* text-decoration, untuk membuat garis pada text, valuenya ada none(tidak ada), underline (garis bawah), overline(garis atas), line-through(garis tengah) */
+
+/* text-indent, untuk membuat indentasi pada paragraf, valuenya ada px, % */
+
+/* text-transform, untuk membuat text menjadi besar/keci/kapital, valuenya ada none(tidak ada), lowercase(huruf kecil semua), uppercase(huruf besar semua), capitalize(huruf kapital pada setiap kata diawal huruf) */
+
+/* letter-spacing, untuk membuat jarak perhuruf, valuenya ada normal, px */
+
+/* word-spacing, untuk membuat jarak perkata, valuenya ada normal, px */

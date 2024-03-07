@@ -1,0 +1,36 @@
+.a:link {
+  color: darkred;
+}
+
+.a:hover {
+  color: darkgreen;
+}
+
+.a:active {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.a:visited {
+  font-family: Georgia;
+  font-weight: bolder;
+  color: black;
+}
+
+li:nth-child(2n) a {
+  color: red;
+}
+
+p:first-of-type {
+  font-weight: bold;
+}
+
+
+
+/* pseudo class adalah kelas semu yg berhubungan dengan style yg akan ditampilkan dalam keadaan tertentu */
+
+/* pseudo class untuk link ada 4, yaitu a:link(keadaan link belum diapa apain), a:hover(keadaan link saat kursor mouse diarahkan ke tag link), a:active(keadaan link saat dipencet), a:visited(keadaan link saat telah di kunjungi) */
+
+/* pseudo class untuk child atau anak dari sebuah element atau parent atau type nya ada 3, yaitu child:first-child(anak pertama), child:last-child(anak terakhir), dan child:nth-child(nomernya, even/genap, odd/ganjil)(anak yg sesuai dengan nomer) */
+
+/* pseudo class untuk type/element/tag nya ada 2, yaitu type:first-of-type(type pertama) dan type:last-of-type(type terakhir) */

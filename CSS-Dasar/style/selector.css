@@ -1,0 +1,37 @@
+h1, h2 {
+  color: seagreen;
+}
+
+ul li a {
+  color: rgb(200,50,20);
+}
+
+ol li a {
+  color: rgb(150,80,200);
+}
+
+p {
+  font-style: italic;
+}
+
+#p1 {
+  color: #ad5102;
+}
+
+.p2 {
+  color: #ba2840;
+}
+
+.pa2 {
+  font-weight: bolder;
+}
+
+p.p2 {
+  line-height: 20px;
+}
+
+/* jika ingin menggabungkan 2 atau lebih tag untuk suatu attribut bisa menggunakan sperator koma, seperti: tag1, tag2, tag...(koma',' berarti dan) */
+/* jika ingin menambahkan attribut pada suatu tag alangkah lebih baiknya lebih spesifik, seperti: ul li a (spasi ' 'berarti didalam, membacanya dari kanan) */
+/* jika pada suatu tag tidak memiliki info yg spesifik kita bisa menambahkan attribut class dan id */
+/* class pada html menggunakan attribut 'class:""' sedangkam dicss menggunakan ' .namaclassnya' */
+/* id pada html menggunakan attribut 'id:""' sedangkam dicss menggunakan '#namaidnya' */

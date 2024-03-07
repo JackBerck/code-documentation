@@ -1,0 +1,16 @@
+body {
+  background-color: white;
+  background-image: url(../../assets/CSS-Dasar/image/grx.jpg);
+  background-repeat: repeat-x;
+  background-position: center center;
+}
+
+/* background-color, untuk mengubah warna background, valuenya seperti color biasa rgb, hexadecimal, colorname */
+
+/* background-image, menambahkan gambar pada background, valuenya url(link folder/url gambar) */
+
+/* background-repeat, untuk mengatur pengulangan gambar, pengulangan gambar ada 2 jenis yaitu terhadap sumbu x (kanan kiri)dan terhadap sumbu y (atas bawah), valuenya ada no-repeat(tidak ada pengulangan), repeat-x(pengulangan terhadap sumbu x), repeat-y(pengulangan terhadap sumbu y) */
+
+/* background-position, untuk mengatur posisi background, posisi background ada 2 jenis yaitu top, center, bottom, y-pos, y% dan right, center, left, x-pos, x% valuenya tinggal memvariasi 2jenis tersebut contoh top right, bottom left, dst */
+
+/* untuk rumus background yaitu background: background-color background-image background-position background-repeat atau background-image dulu */

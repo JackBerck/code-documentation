@@ -1,0 +1,25 @@
+/* inheritance adalah suatu value yang dimana digunakan untuk memberikan keturunan pada childnya. intinya jika pada suatu style child tidak bisa menirukan atau sama seperti parentnya maka dikasihlah value inherit agar stylenya sama seperti parentnya
+
+.container {
+  font-size: 100px;
+  color: purple;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+} */
+
+body {
+  font-style: oblique;
+  color: purple;
+  text-decoration: underline;
+  font-variant: small-caps;
+}
+
+a {
+  font-style: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  font-variant: inherit;
+}

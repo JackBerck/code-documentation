@@ -1,0 +1,17 @@
+h2 {
+  font-family: Tahoma, Sans-Serif;
+  font-weight: lighter;
+  font-size: 40px;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+p{
+  font-family: Georgia, Serif;
+  font-weight: lighter;
+  font-size: 22px;
+  line-height: 40px;
+  font-variant: normal;
+}
+
+/* rumus dari syntax css yaitu selector { atrribut: value; }
