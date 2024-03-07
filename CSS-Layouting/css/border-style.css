@@ -1,0 +1,26 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    margin: 40px auto;
+    padding: 10px;
+    border: 3px solid lawngreen ;
+}
+
+/* border adalah batas disekeliling padding dan content, atau diantara margin
+dan padding */
+
+/* border memiliki value, sintaks value dari border yaitu seperti dibawah ini 
+border: width(ukuran/size/lebar) style(stylenya) color(warna); */
+
+/* style dari border ada beberapa yaitu ada solid(berupa garis linear), dotted(berupa
+titik), dashed(garis putus putus), dan double (garis lurus linear akan tetapi double) */
+
+/* atau value border juga bisa digunakan secara terpisah seperti background */
+
+/* border juga bisa digunakan hanya disalah satu sisi atau hanya beberapa sisi(tidak semua
+sisi) dengan cara sama seperti margin dan pading, contoh border-right: valuenya; atau
+mungkin border-bottom: valuenya; */
+
+/* CATATAN! border juga bisa merubah ukuran box, sama seperti padding, sehingga harus dikalkulasi
+terlebih dahulu agar mendapatkan ukuran yg kita inginkan */

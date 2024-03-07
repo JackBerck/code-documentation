@@ -1,0 +1,17 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* padding adalah ruang kosong yg berada disekitar antara content dan border. padding
+berfungsi sebagai pemberi jarak antara tulisan atau gambar dll dengan border atau sisi kotak element */
+
+/* penggunaan padding sama seperti margin */
+
+/* akan tetapi walaupun sama, padding tidak bisa atau tidak memiliki nilai negatif dan nilai auto */
+
+/* CATATAN! jika kita menggunakan padding, maka ukuran box nya akan berubah atau membesar. contoh ukuran boxnya 300px
+terus kita tambahkan padding 20px, maka ukuran box tersebut 300+20=320px */

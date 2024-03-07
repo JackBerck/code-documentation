@@ -1,0 +1,35 @@
+div {
+    width: 300px;
+    height: 300px;
+}
+
+.satu {
+    background-color: seagreen;
+}
+
+.dua {
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+.tiga {
+    background-color: blueviolet;
+}
+
+/* position relative ini berfungsi sebagai pemberi position kepada elemen yg akan diberikan */
+
+/* jika kita menggunakan position relative ini maka kita akan memajukan elemen yg kita beri sebesar satu dimensi, dengan kata lain
+atau konsep simplenya elemen yg diberikan akan maju satu langkah kedepan kita */
+
+/* ketika kita menggerakkan elemen dengan position relative(menggunakan top left dll), ruang yg ditempati oleh elemen tersebut masih ada
+walaupun sudah maju satu dimensi */
+
+/* sehingga elemen yg dibawahnya tidak bergerak keatas */
+
+/* ketika kita menggerakkan elemen dengan position relative, elemen akan bergerak relative terhadap posisi semulanya */
+
+/* jika kita memberikan properti lanjutan position yaitu top:0; left:0; dll, maka elemen tidak berubah posisinya */
+
+/* jika kita memberikan pergerakan position relative ini, maka pergerakan tersebut relative terhadap posisi semulanya */

@@ -1,0 +1,26 @@
+div {
+    width: 300px;
+    height: 300px;
+}
+
+.satu {
+    background-color: black;
+    position: static;
+}
+
+.dua {
+    background-color: saddlebrown;
+}
+
+.tiga {
+    background-color: seagreen;
+}
+
+/* position adalah attribut yg digunakan untuk mengatur posisi dari sebuah elemen html yg akan
+kita berikan */
+
+/* position memiliki beberapa nilai atau value, yaitu diantaranya ada static, relative, absolute, dan fixed */
+
+/* nilai default position adalah static, sehingga jika kita memberikan position dengan nilai static,
+maka tidak akan terjadi apa apa(tidak berbeda dimensi, sehingga tidak bisa diberikan nilai position lanjutannya
+, seperti top, right, bottom, dan left, selain static bisa diberikan value atau nilai top left dll) */

@@ -1,0 +1,40 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.kotak {
+    width: 600px;
+    height: 650px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.satu {
+    background-color: blueviolet;
+}
+
+.dua {
+    background-color: brown;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.tiga {
+    background-color: darkgoldenrod;
+}
+
+/* position absolute ini berfungsi sebagai pemberi posisi atau penggerak elemen yg dipilih(direkomendasikan) */
+
+/* ketika kita menggunakan dan menggerakkan elemen dengan posisi absolute (top right dll), ruang yg ditempati 
+oleh elemen tersebut dianggap tidak ada */
+
+/* bahasa mudahnya elemennya akan maju satu dimensi lalu tempat yg tadainya ditempati itu tidak dianggap sehingga
+elemen yg berada dibawahnya atau selanjutnya atau lainnya akan menempati tempat kosong tersebut yg tadinya diisi 
+oleh elemen yg diberi position absolute */
+
+/* ketika kita menggerakkan elemen dengan position absolute, elemen akan bergerak relatif terhadap posisi dari elemen 
+parrentnya atau pembungkusnya yg terdekat dengan syarat selama elemen parrentnya meiliki posisi yang juga nonstatic atau
+dimensinya sama atau sesuai dengan elemen absolutenya */

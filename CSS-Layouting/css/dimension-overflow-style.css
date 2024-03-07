@@ -1,0 +1,51 @@
+.satu {
+    width: 500px;
+    height: 500px;
+    background-color: teal;
+}
+
+.dua {
+    width: 120%;
+    background-color: tomato;
+}
+
+/* dimensi itu ada dua yaitu ada width(untuk mengatur lebar dari sebauh elemen) 
+dan height(untuk mengatur tinggi dari sebuah elemen) */
+
+/* value untuk dimensi(width dan height) itu ada 3 yaitu px(pixel) dan
+%(persentase dari sebuah elemen parentnya), dan ada juga satuan dunia  
+nyata (in, cm, mm, pt, pc) */
+
+.tiga {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    overflow: auto;
+}
+
+.empat {
+    width: 400px;
+    height: 300px;
+    overflow: scroll;
+    display: inline-block;
+    float: right;
+    background-color: lightblue;
+}
+
+.lima {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    background-color: lightgreen;
+}
+
+/* overflow adalah attribut yg digunakan untuk mengatur perilaku dari html
+yg contentnya melebihi batas dimensi elemennya */
+
+/* overflow ada 4 yaitu ada visible(akan menampilkan content walaupun keluar dari elemennnya)
+auto(akan membuatkan scroll pada content yang keluar dari elemennya, kalau tidak keluar dari elemennya
+maka tidak akan dibuatkan scroll), hidden(content yg melebihi dari batas elemen akan disembunyikan atau tidak
+ditampilkan), dan scroll(elemennya akan dibuatkan scroll walaupun contentnya tidak keluar atau bahkan keluar
+dari elemennya) */

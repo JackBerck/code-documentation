@@ -1,0 +1,25 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: lawngreen;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px dotted black;
+    box-sizing: border-box;
+}
+
+/* untuk mengatasi perubahan ukuran jika kita menggunakan padding dan border
+maka gunakanlah box-sizing, box-sizing ini berfungsi sebagai pengkalkulasi ukuran box atau kotak
+yang kita buat sehingga sesuai dengan ukuran aslinya */
+
+/* maksudnya attribut ini akan membuat ukuran kotaknya atau boxnya tetap sesuai dengan widht atau height walaupun
+memberikan padding dan border berapapun yg diberikan */
+
+/* contoh seperti yg diatas, div nya sudah diberi padding dan border akan tetapi ukurannya tetap sesuai dengan
+widthnya dikarenakan attribut box-sizing ini */
+
+/* box-sizing ini memiliki value border-box(sesuai ukuran asli boxnya) */
+
+/* .selector {
+  box-sizing: border-box;
+} */

@@ -1,0 +1,26 @@
+h1 {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+a {
+    width: 1000px;
+    background-color: black;
+}
+
+p strong {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+/* display adalah sebuah attribut yg digunakan untuk mengatur perilaku dari sebuah elemen */
+
+/* display memiliki default block dan inline dibeberapa tag html tidak semuanya memiliki nilai default yg sama */
+
+/* nilai display ada block(dimensinya bisa diatur dan jika menambahkan tag baru akan berada dibawahnya)
+, inline(dimensinya tidak bisa diatur dan saat membuat tag baru, maka akan berada disampingnya), dan 
+inline-block(dimensinya bisa diatur dan saat menambahkan tag baru maka akan berada disampingnya atau tidak menambahkan 
+baris baru) */

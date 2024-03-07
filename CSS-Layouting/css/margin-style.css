@@ -1,0 +1,56 @@
+div {
+    display: inline-block;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-bottom: 200px;
+    margin-right: 150px;
+}
+
+.dua {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    margin-left: 50px;
+}
+
+.tiga {
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+    margin-top: 20px;
+}
+
+.enam {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+/* margin adalah ruangan kosong yang berada di sekitar element(ruang kosong diluar sekitar kotak elemen) */
+
+/* margin ada 4 yaitu margin-left(menambahkan ruang kosong di sisi kiri),
+margin-right(menambahkan ruang kosong di sisi kanan), margin-bottom(menambahkan ruang kosong di sisi bawah)
+, dan margin-top(menambahkan ruang kosong di sisi atas) */
+
+/* margin tidak saling menambahkan untuk yg vertikal contoh(jika elemen a memiliki margin-bottom lebih banyak sebanyak 200px
+sedangkan dibandingkan margin-top untuk yg elemen b adlaah 20px maka yg dihitung hanya margin-bottom untuk elemen a yg sebanyak 200px
+atau dengan kata lain jarak vertikal antara elemen a dan b adalah 200px) */
+
+/* akan tetapi margin akan saling menambahkan jika yg untuk yg horizontal contoh(elemen a memiliki margin-right 150px
+dan margin b memiliki margin-left 50px, makan jarak antara elemen a dan b adalah 150+50=200px) */
+
+/* margin juga memiliki nilai negatif (-) niali negatif ini akan berjalan berlawanan arah dengan yg sebenarya terjadi(misal 
+margin-left 150 akan bergerak kekanan sedangakan jika dikasih nilai -150 makan akan bergerak kekiri betgitu juga dengan
+yg lain) */
+
+/* margin juga memiliki nilai auto, nilai auto ini akan menjadikan elemen yg dikasih nilai auto ini akan berada ditengah 
+parentnya, lebih tepatnya kanan dan kirinya seimbang, sehingga jika kita ingin membrikan nilai auto pada element yg kita 
+inginkan maka margin-left dan margin-right sama sama dikasih nilai auto, tidak boleh salah satu */
+
+/* margin juga memiliki sorthand, rumus sorthandnya yaitu berlawanan arah jarum jam
+margin: semua, margin: atas/bawah kiri/kanan, margin: atas kiri/kanan bawah, atas kanan bawah kiri */
