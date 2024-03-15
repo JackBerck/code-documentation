@@ -1,0 +1,78 @@
+/* grid-template-area digunakan untuk mendefinisikan grid template menggunakan nama dari apa yang ditulis pada properti grid-area pada item
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'namaarea namaarea'
+  'namaarea namaarea';
+  
+  intinya mendefinisikan area yang ingin kita pakai di itemnya. cara penulisanya seperti diatas, setiap nama area mempresentasikan rownya dan spasi' ' itu bordernya
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: 
+    'header header header'
+    'sidebar sidebar sidebar'
+    'content content content'
+    'footer footer footer';
+}
+
+.item {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .item:nth-child(odd) {
+  background-color: violet;
+} */
+
+/* grid-area digunakan untuk item menempati area yang sudah didefinisikan terlebih dahulu oleh grid-template-areas atau sebaliknya. intinya grid-area yaitu area yang akan digunakan item untuk menempati area area yang sudah didefinisikan grid-template-areas sebelumnya
+
+.item {
+  grid-area: namaarea;
+} */
+
+.header {
+  grid-area: header;
+  background-color: pink;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: coral;
+}
+
+.content {
+  grid-area: content;
+  background-color: seagreen;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: brown;
+}
+
+/* Responsive Breakpoint */
+
+@media screen and (min-width: 576px) {
+  .container {
+    grid-template-areas: 
+    'header header header'
+    'sidebar content content'
+    'sidebar content content'
+    'footer footer footer';
+  }
+}

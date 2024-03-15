@@ -1,0 +1,35 @@
+/* minmax() digunakan untuk menentukan ukuran minimal dan maximal dari grid track. intinya kalau bisa pakai yang ukuran maksimal pakai yang ukuran maksimal dan jika ukuran layarnya makin kecil kurangin sampai batas minimalnya 
+
+.container {
+  display: grid;
+  grid-auto-columns: minmax(<ukuran minimal>,<ukuran maksimal>);
+}
+
+.container {
+  display: grid;
+  grid-auto-columns: 1fr minmax(220px, 1000px) 2fr;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  border: 5px solid orange;
+  display: grid;
+  grid-template-columns: 1fr minmax(120px, 300px) 1fr;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

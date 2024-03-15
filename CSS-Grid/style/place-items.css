@@ -1,0 +1,47 @@
+/* place-items yaitu shorthand untuk menuliskan justify-items dan align-items dalam satu deklarasi.
+
+.container {
+  display: grid;
+  place-items: <align-items> <justify-items>;
+}
+*/
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: 130px 130px 130px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        /* justify-items: center;
+        align-items: center; */
+        place-items: center end;
+      }
+
+      .items {
+        border: 3px solid black;
+        width: 150px;
+        background-color: lightblue;
+      }
+
+      .items.i1,
+      .items.i4,
+      .items.i7 {
+        height: 100px;
+      }
+
+      .items.i2,
+      .items.i5,
+      .items.i8 {
+        height: 50px;
+      }
+
+      .items.i3,
+      .items.i6,
+      .items.i9 {
+        height: 80px;
+      }

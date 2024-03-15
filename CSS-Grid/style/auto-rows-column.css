@@ -1,0 +1,34 @@
+/* grid-auto-rows dan grid-auto-columns digunakan untuk mengatur ukuran grid track yang tidak dituliskan pada grid-template(implicit track)
+
+.container {
+  grid-auto-columns: <track size>;
+  grid-auto-rows: <track size>;
+}
+
+track-size: bisa berupa px, %, auto, atau fr(fraction/pecahan/bagian) */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 100px 75px auto;
+  grid-auto-rows: 80px;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

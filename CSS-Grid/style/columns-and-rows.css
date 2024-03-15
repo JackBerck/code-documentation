@@ -1,0 +1,40 @@
+/* grid-template-columns dan grid-template-rows */
+
+/* grid-template-rows dan grid-template-columns digunakan untuk mendefinisikan kolom dan baris dengan dengan cara menuliskan nilai yang dipisahkan oleh spasi. nilai mempresentasikan ukuran grid track(baris atau kolomnya) dan spasi mempresentasikan grid line(garis tablenya) */
+
+
+/* cara menggunakan grid-template-columns dan grid-template-rows yaitu dengan memberikannya properti grid-template-columns dan grid-template-rows pada container(elemen yang dikasih properti display: grid;)
+
+.container {
+  display: grid;
+  grid-auto-columns: <track-size> ... | <line-name> <track-size> | ...;
+  grid-auto-rows: <track-size> ... | <line-name> <track-size> | ...;
+}
+
+track-size: bisa berupa px, %, auto, atau fr(fraction/pecahan/bagian)
+line-name: nama yang bisa diberikan pada track */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 25% auto 80px;
+  grid-template-rows: 50px 100px auto;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

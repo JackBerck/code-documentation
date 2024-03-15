@@ -1,0 +1,37 @@
+/* grid-template adalah shorthand untuk mendefinisikan grid-template-rows, grid-template-columns, dan grid-template-areas dalam satu deklarasi
+
+.container {
+  display: grid;
+  grid-template: <grid-template-rows> <grid-template-areas>/<grid-template-columns>;
+} 
+
+.container {
+  display: grid;
+  grid-template: [bar1] 'area1 area2'150px [bar2] 'area3 area 4'120px [bar3]/ 1fr 2fr
+}
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template: '11 12 13'100px '21 22 23'1fr '31 32 33'70% / 1fr 100px 120px;
+}
+
+.item {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(odd) {
+  background-color: violet;
+}

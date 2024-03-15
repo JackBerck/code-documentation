@@ -1,0 +1,55 @@
+/* grid-gap digunakan untuk mendefinisikan dan mengatur ukuran grid line(jarak antar baris atau kolom). cara penulisannya ada 2 ada cara lama(grid-column-gap dan grid-row-gap) dan ada cara baru(column-gap dan row-gap)
+
+ini adalah cara lama ada gridnya
+.container {
+  display: grid;
+  grid-column-gap: <line-size atau ukurannya>;
+  grid-row-gap: <line-size atau ukurannya>;
+}
+
+ini cara baru tidak ada gridnya
+.container {
+  display: grid;
+  column-gap: <line-size atau ukurannya>;
+  row-gap: <line-size atau ukurannya>;
+} */
+
+/* grid-gap atau gap saja adalah shorthand untuk column-gap dan row-gap dalam satu deklarasi. cara penulisannya ada 2 ada cara lama(grid-gap) dan ada cara baru(gap)
+
+ini cara lamanya ada gridnya
+.container {
+  display: grid;
+  grid-gap: <row-gap> <column-gap>;
+}
+
+ini cara baru tidak ada gridnya
+.container {
+  display: grid;
+  gap: <row-gap> <column-gap>;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px 5px;
+}
+
+.item {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(even) {
+  background-color: violet;
+}

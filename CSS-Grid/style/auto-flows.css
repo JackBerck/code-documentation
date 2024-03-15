@@ -1,0 +1,34 @@
+/* grid-auto-flows digunakan untuk mengatur penempatan item/cell pada grid track, termasuk yang ditulis secara implicit. sehingga grid-auto-flows ini bisa digunakan untuk explicit dan implicit
+
+.container {
+  grid-auto-flow: row | column | row dense | column dense;
+}
+
+nilai defaulnya yaitu row, grid-auto-flow ini sama dengan flex-direction */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 50px 100px;
+  grid-template-rows: 100px 75px;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

@@ -1,0 +1,16 @@
+/* GRID TERMINOLOGI ATAU ISTILAH ISTILAH YANG ADA DI DALAM CSS GRID */
+
+/* GRID CONTAINER, grid container yaitu element pembungkus grid, didefinisikan dengan menuliskan :
+display: grid; */
+
+/* GRID ITEMS, grid items adalah element element yang berada (1 level) di dalam grid container */
+
+/* GRID LINE, grid line adalah garis vertikal(baris/tegak) atau horizontal(kolom/miring) yang memisahkan grid menjadi beberapa bagian dan ditandai dengan angka. simpelnya grid line adalah garis table */
+
+/* GRID CELL, grid cell adalah perpotongan atau pertemuan antara baris dan kolom di dalam grid. simpelnya grid cell adalah satu item atau cell pada table */
+
+/* GRID AREA, grid area adalah kumpulan lebih dari satu grid cell yang membentuk kotak. simpelnya beberapa items yang menyatu dan membentuk kotak */
+
+/* GRID TRACK, grid track adalah ukuran atau jarak antara 2 grid line, bisa horizontal atau vertikal. simpelnya ini adalah cellpadding pada table(padding pada table) */
+
+/* GRID GAP, grid gap yaitu jarak atau spasi antar cellnya. simpelnya ini adalah cellspacing pada table(spacing pada table) */

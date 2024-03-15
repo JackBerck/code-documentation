@@ -1,0 +1,47 @@
+/* auto-fill dan auto-fit digunakan untuk menentukan jumlah item untuk berada pada grid track, biasanya digunakan dalam nilai repeat()
+  auto-fit dan auto-fill, secara otomatis nentuin ada berapa kolom yang berada didalam wadahnya. otomatis mengisi jika masih ada ruang untuk item di bawahnya.
+
+.container {
+  display: grid;
+  grid-auto-columns: repeat(auto-fit | auto-fill, 1fr);
+} */
+
+/* --------------------------------------------------------------------------------- */
+
+/* auto-fill, gridnya secara eksplisit akan memeriksa akan ada tempat kosong yang dapat memuat satu lagi atau beberapa */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.auto-fill {
+  width: 60%;
+  margin: 50px auto;
+  border: 5px solid orange;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* auto-fit, auto-fit dan auto-fill itu penggunaannya sama akan tetapi ada perbedaannya yaitu ketika itemsnya itu lebih sedikit daripada lebar containernya. gridnya secara eksplisit diakhir elemen yang terakhir */
+
+.auto-fit {
+  width: 60%;
+  margin: 50px auto;
+  border: 5px solid orange;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+}

@@ -1,0 +1,30 @@
+/* SPECIAL KEYWORDS & FUNCTIONS
+
+1. repeat()
+repeat() ini digunakan untuk menentukan ukuran grid track secara berulang, sehingga penggunaannya berada didalam grid-template dan kita juga tidak harus menuliskan ukurannya satu persatu
+
+.container {
+  display: grid;
+  grid-auto-columns: repeat(<berapa kali pengulangannya>, <ukuran grid tracknya>);
+} 
+
+jika ingin menambahkan repeatnya lebih dari satu bisa menggunakan spasi` `*/
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightblue;
+}

@@ -1,0 +1,32 @@
+/* explicit grid yaitu ketika kita secara jelas menuliskan ukuran dari gridnya(kolom dan barisnya) */
+
+/* implicit grid yaitu ketika gridnya menentukan secara otomatis sisanya dari baris dan kolom yang tidak kita tentukan secara explicit */
+
+/* jika kita inspect elemen dimozila nanti akan ada garis solid/garis dan dashed/garis putus(explicit) serta ada garis dotted/titik(implicit) */
+
+/* intinya kalau explicit yang diberi grid-template-columns dan grid-template-rows. sedangkan yang implicit tidak */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 100px 75px auto;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

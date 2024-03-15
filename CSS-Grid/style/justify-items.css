@@ -1,0 +1,48 @@
+/* justify-items digunakan untuk mensejajarkan items pada sumbu horizontal, valuenya ada start, end, stretch, dan center
+
+.container {
+  display: grid;
+  justify-items: start| end | center | stretch;
+}
+
+start(elemen elemen itemsnya akan rapat ke kiri container), end(elemen elemen itemsnya akan rapat ke kanan container), center(elemen elemen itemsnya akan berada ditengah container), stretch(elemen elemen itemsnya akan memenuhi container secara sumbu horizontal atau lebarnya akan penuh, kecuali pada itemsnya sudah dikasih lebar atau width terlebih dahulu maka stretch ini tidak akan berpengaruh) */
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eff;
+}
+
+.container {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  border: 1px black solid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 130px 130px 130px;
+  gap: 5px;
+  /* justify-items: start; */
+  /* justify-items: end; */
+  justify-items: center;
+  /* justify-items: stretch; */
+}
+
+.item {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l1, .l2, .l3 {
+  width: 130px;
+}
+
+.l4, .l5, .l6 {
+  width: 130px;
+}
+
+.l7, .l8, .l9 {
+  width: 130px;
+}

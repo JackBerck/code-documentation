@@ -1,0 +1,44 @@
+/* line-name yaitu nama yang bisa digunakan pada track
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: [kolom1] 25% [kolom2] auto [kolom3] 50px [kolom4];
+  grid-template-rows: [baris1] 100px [baris2] auto [baris3] 10% [baris 4];
+} */
+
+/* fr(fraction) yaitu bagian atau pecahan yang ada didalam grid, penghitungan pembagiannya yaitu bagian yg ditentukan dibagi jumlah total seluruh bagian dikali ukuran containernya
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr;
+  grid-template-rows: 1fr 2fr 1.4fr;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 2fr 1.7fr 1.3fr;
+  grid-template-rows: 1.3fr 2fr 1fr;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}

@@ -1,0 +1,71 @@
+/* grid-area digunakan untuk menentukan nama area pada item sesuai dengan template yang sudah dibuat sebelumnya melalui properti grid-template-areas
+grid-area juga bisa digunakan sebagai shorthand untuk grid-column-start, grid-column-end, grid-row-start, dan grid-row-end
+
+.item {
+  display: grid;
+  grid-area: <nama> | <row-start> / <column-start> / <row-end> / <column-end>;
+} */
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas:
+          'header header header'
+          'sidebar content content'
+          'footer footer footer';
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: lightblue;
+      }
+
+      .sidebar {
+        grid-area: content;
+        background-color: salmon;
+      }
+
+      .content {
+        grid-area: sidebar;
+        background-color: lightgreen;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: silver;
+      }
+
+      .containerA {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+      }
+
+      .containerA .my-item {
+        /* grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 3; */
+
+        grid-area: 2 / 1 / 4 / 3;
+
+        background-color: lightblue;
+      }

@@ -1,0 +1,35 @@
+/* place-self yaitu shorthand posisi item pada sebuah cell terhadap sumbu vertikal dan sumbu horizontal dalam satu deklarasi
+
+.item {
+  display: grid;
+  place-self: <align-self> <justify-self>;
+} */
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+
+        /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+        grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .my-item {
+        background-color: lightblue;
+        place-self: end;
+      }

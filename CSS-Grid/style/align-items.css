@@ -1,0 +1,49 @@
+/* align-items digunakan untuk mensejajarkan items pada sumbu vertikal, valuenya ada start, end, stretch, dan center
+
+.container {
+  display: grid;
+  align-items: start| end | center | stretch;
+}
+
+start(elemen elemen itemsnya akan rapat ke atas container), end(elemen elemen itemsnya akan rapat ke bawah container), center(elemen elemen itemsnya akan berada ditengah container), stretch(elemen elemen itemsnya akan memenuhi container secara sumbu vertikal atau tingginyanya akan penuh, kecuali pada itemsnya sudah dikasih tinggi atau height terlebih dahulu maka stretch ini tidak akan berpengaruh) */
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eff;
+}
+
+.container {
+  display: grid;
+  width: 80%;
+  height: 1000px;
+  margin: auto;
+  border: 1px black solid;
+  box-sizing: border-box;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  /* align-items: start; */
+  align-items: end;
+  /* align-items: center; */
+  /* align-items: stretch; */
+}
+
+.item {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l1, .l2, .l3 {
+  height: 130px;
+}
+
+.l4, .l5, .l6 {
+  height: 130px;
+}
+
+.l7, .l8, .l9 {
+  height: 130px;
+}

@@ -1,0 +1,60 @@
+/* css grid yaitu modul css baru yang digunakan untuk mendefinisikan sistem layout berbentuk grid dalam 2 dimensi (baris dan kolom). pengertian simpelnya css grid ini sama dengan flexbox namun 2 dimensi atau bisa mengunakan baris dan kolom secara bersamaan, akan tetapi tidak menggantikan posisi dari flexbox, bahkan flexbox nanti bisa digunakan secara bersamaan dengan grid */
+
+/* cara menggunakan css grid yaitu dengan menambahkan property display: grid;. contoh
+.container {
+  display: grid;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  border: 5px solid black;
+  box-sizing: border-box;
+  padding: 5px;
+  display: grid;
+  grid-template-areas: "header header"
+                       "aside main"
+                       "nav main"
+                       "footer footer";
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1.3fr;
+}
+
+header {
+  background-color: #806368;
+  padding: 40px 0;
+  grid-area: header;
+}
+
+aside {
+  background-color: #2f93ff;
+  padding: 60px 0;
+  grid-area: aside;
+}
+
+nav {
+  background-color: #e45765;
+  padding: 100px 0;
+  grid-area: nav;
+}
+
+main {
+  background-color: #e0aa77;
+  padding: 171px;
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #666;
+  padding: 20px 0
+}

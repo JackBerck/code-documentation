@@ -1,0 +1,56 @@
+/* min-content dan max-content digunakan untuk menentukan berapa besar ukuran grid track berdasarkan besar kecilnya content pada sebuah item
+
+.container {
+  display: grid;
+  grid-template-columns: min-content | max-content;
+} */
+
+/* -------------------------------------------------------------------------------- */
+
+/* jika kita menggunakan min-content maka besarnya grid track akan sesuai dengan content yang kecil. min-content akan memecah beberapa kata yang tadinya dalam satu baris menjadi setiap kata satu baris, dan ukuran grid tracknya akan mengambil kata atau content yang lebih besar dari kata atau content yang lainnya
+
+.container {
+  display: grid;
+  grid-template-rows: min-content;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.min-content {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: lightgreen;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* jika kita menggunakan max-content maka besarnya grid track akan sesuai dengan content yang besar. max-content akan meneruskan kata atau content yang ada di dalam item sampai content berakhir tanpa memecahnya menjadi beberapa kata atau baris
+
+.container {
+  display: grid;
+  grid-template-columns: max-content;
+} */
+
+.max-content {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
