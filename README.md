@@ -1,4 +1,4 @@
-dokumentasi pribadi akhirnya berani ku up, dokumentasi ini original bikinan aku sendiri dan dihimpun dari berbagai sumber sejak 2020 *terutama kebanyakan WPU, chat gpt, w3s, dll. cocok buat pemahaman dasar pembelajaran dasar buat kuliahan. gunakan dengan baik TIDAK UNTUK DIPERJUALBELIKAN.
+dokumentasi pribadi akhirnya berani ku up, dokumentasi ini original bikinan aku sendiri dan dihimpun dari berbagai sumber sejak 2020 *terutama kebanyakan WPU, chat gpt, w3s, dll. cocok buat pemahaman dasar pembelajaran dasar buat kuliahan. gunakan dengan baik.
 
 kalau ada yang ingin kontribusi langsung aja di fork nanti minta push req atau bisa dm dulu bebincang.
 
