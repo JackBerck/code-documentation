@@ -1,0 +1,23 @@
+div {
+  width: 300px;
+  height: 300px;
+  background-image: url(../../../Download/soek.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgreen;
+  border-radius: 50%;
+}
+
+/* border-radius digunakan untuk mengatur ketumpulan sudut suatu element, valuenya berupa px atau % */
+
+/* semakin besar valuenya semakin tumpul elementnya, sehingga jika value border-radius setengah dari besarnya element maka membentuk lingkaran, untuk hal tersebut maka kita membutuhkan value 50% */
+/* jika lebar dan tingginya tidak sama maka jika dikasih value 50% atau yg laijnya maka akan membentuk elips */
+
+/* CATATAN! border-radius tidak merubah bentuk element hanya tampilannya saja */
+
+/* border-radius juga bisa diberikan pada salah satu sisi atau hanya beberapa(tidak semuanya), dengan cara contoh mengasih border-top-left-radius atau yg lainnya, intinya border-top/bottom-left/right-radius */
+
+/* border radius juga memiliki sorthand yaitu border-radius: <dari pojok kiri atas lalu searah jarum jam> */
+
+/* jika kita memberikan tambahan background-image maka imagenya akan terbungkus oleh frame bordernya, atau kata lain imagenya di dalam */
+/* jika kita memberikan imagenya di html maka image tersebut akan keluar dari frame atau bordernya, maka cara mengatasinya dengan overflow */

@@ -1,0 +1,81 @@
+/* properti animation ini sama seperti transition akan tetapi memiliki lebih dari 2 keadaan, dan disetiap keadaannya disebut keyframes. peletakan keyframes diluar selector(dimana saja asalkan diluar selector) cara membuat keyframes adalah seperti berikut
+
+@keyframes [name] {
+  from {
+    [properti-css]
+  }
+  to {
+    [properti-css]
+  }
+}
+
+atau from dan to nya diganti persentase
+
+@keyframes [name] {
+  0% {
+    [properti-css]
+  }
+  25% {
+    [properti-css]
+  }
+  50% {
+    [properti-css]
+  }
+  100% {
+    [properti-css]
+  }
+}
+
+name adalah nama dari keyframesnya(nanti dihubungkan ke selector yang akan kita animasikan)
+properti-css yaiti properti css mana yang akam kita ganti atau ubah atau bahkam ditambahkan */
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  animation: kotakAnimasi 2s ease-in 3s infinite alternate forwards;
+}
+
+@keyframes kotakAnimasi {
+  0% {
+    width: 200px;
+    height: 200px;
+  }
+  50% {
+    height: 500px;
+    width: 200px;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* berikut adalah nilai apa saja yang bisa diberikan pada animation :
+.selector {
+  animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+}
+
+atau penggunaan valuenya dapat dilakukan secara terpisah seperti
+.selector {
+  animation-name: name;
+  animation-duration: s/ms;
+  animation-timing-function: ease;
+  dll
+} */
+
+/* name adalah nama dari animationnya yang sudah kita berikan pada keyframes
+
+duration adalah durasi dari pergerakannya
+
+timing-function sama seperti transition yaitu gerak lambat atau cepat dari animationnya(ease, ease-in, dll)
+
+delay yaitu waktu tunggu atau delay animasi jika ingin bergerak
+
+iteration-count adalah pengulangan animasi yang diberikan. valuenya ada angka(jumlah pengulangan) dan infinite(pengulangan tk terbatas)
+
+direction yaitu dari mana dimulainya animation. valuenya ada normal(defaulnya), reverse(berkebalilan), alternate(berganti ganti awal akhir akhir awal dst), dan alternate-reverse(berkebalikan alternate, akhir awal awal akhir dst)
+
+fill-mode yaitu letak animation akhirnya akan ada dimana. valuenya ada none(tidak ada/kembali langsung ke default), forwards(berhenti diakhir animation), backwards(i dont know), dan both (forwards dan backwards)
+
+play-state yaitu suatu perintah untuk menjalankan atau memberhentikan animation. valuenye ada running(default/animationnya berjalan) dan paused(animationnya terhenti atau diberhentikan) */

@@ -1,0 +1,41 @@
+/* filter adalah properti css3 yang digunakan untuk memberikan efek visual pada gambar, background, dan border. penggunaan filter ini wajib menggunakan vendor prefix -webkit- agar bisa berjalan dibeberapa browser */
+
+/* .rumusnya {
+  filter: <tipe-filter>;
+}
+
+.object {
+  filter: blur(px)
+          brightness(angka | %)
+          contrast(angka | %)
+          saturate(angka | %)
+          grayscale(angka | %)
+          sepia(angka | %)
+          hue-rotate(deg)
+          invert(angka | %)
+          opacity(angka | %)
+          drop-shadow(sama seperti box-shadow);
+} */
+
+/* catatan! object yang dimaksud adalah gambar, backgroud, dan border
+tipe tipe filternya antara lain:
+1. blur, untuk mengatur blur pada object atau ketajaman gambar
+2. brightness, digunakan untuk mengatur gelap atau terangnya object
+3. contrast, mengatur kontras pada obejct(semakin jelas warnanya mungkin ini y, intinya mengatur kontras)
+4. saturate, mengatur saturasi atau ketajaman warna object semakin tinggi semakin tajam, semakin kecil semakin hilang atau abu abu warnanya
+5. grayscale, mengatur warna abu abu atau hitam putihnya warna object
+6. sepia, mengatur warna sepia atau menambahkan warna sepia atau warna kuning
+7. hue-rotate, digunakan untuk mengatur roda warna dari sebuah object yang dipilih
+8. invert, digunakan untuk menambahkan atau mengatur warna negatif pada object, sama seperti negatif film
+9. opacity, digunakan untuk mengatur opacity atau transparansi object
+10. drop-shadow, untuk mengatur bayangan pada sebuah object termasuk object yang transparan */
+
+/* filter juga penggunaannya bisa ditumpuk atau lebih dari satu tipe dengan cara memberikan spasi " "
+.multiple {
+  -webkit-filter: opacity(0.5) grayscale(120%) hue-rotate(120deg);
+  filter: opacity(0.5) grayscale(120%) hue-rotate(120deg);
+} */
+
+img {
+  -webkit-filter: saturate(120%);
+}

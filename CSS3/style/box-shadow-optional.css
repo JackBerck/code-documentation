@@ -1,0 +1,20 @@
+div {
+  width: 300px;
+  height: 300px;
+  background-color: #a45;
+  margin: 50px auto;
+  box-shadow: inset 0 0 0 5px black,
+  inset 0 0 0 10px white;
+}
+
+/* box-shadow juga memiliki value optional yaitu ada spread dan inset */
+
+/* rumusnya seperti ini
+box-shadow: <inset> | <x-offset> | <y-offset> | <spread> <blur> | <color> */
+
+/* inset digunakan untuk memindahkan bayangan atau shadow boxnya ke dalam atau didepan elemen bukan diluar atau dibelakangnya, valuenya yaitu inset */
+
+/* spread digunakan untuk menambahkan atau mengurangi size atau ukuran dari bayangan atau shadow boxnya(intinya mirip size), valuenya sama seperti x dan y offset(jika valuenya + akan menambah ukuran dan jika - akan memperkecil ukuran) */
+
+/* TAMBAHAN! 
+jika kita ingin menambahkan lebih dari 1 box-shadow kita bisa memberika koma "," atau teknik ini bisa disebut juga multiple box-shadow */

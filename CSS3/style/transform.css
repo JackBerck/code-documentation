@@ -1,0 +1,36 @@
+/* transform adalah properti css3 yang memungkinkan kita dapat mengatur atau memanipulasi format visual dari elemen html. transformasi yang dapat dilakukan yaitu 2d dan 3d. akan tetapi dimateri ini hanya 2d saja */
+
+/* .elemen {
+  transform: <fungsi>;
+} */
+
+/* fungsi fungsi transformasi yaitu:
+1. scale, digunakan untuk memperbesar atau memperkecil elemen html. ada scale(horizontal dan vertikal atau horizontal, vertikal) scaleX(mengatur b/k horizontal) ,dan scaleY(mengatur b/k vertikal)
+2. skew, membuat elemennya condong atau miring. ada skew (condong horizontal atau horizontal, vertikal), skewX(horizontal), dan skewY(vertikal)
+3. rotate, memutar elemen html searah jarum jam jika + berlawanan jika -. ada rotate(perputarannya ditengah), rotateX(perputarannya horizontal), dan rotateY(perputarannya vertikal)
+4. translate, mengubah posisi elemen html dengan titik awal di mana elemen html itu berada. ada translate(horizontal, vertikal), translateX(horizontal), dan translateY(vertikal)  */
+
+/* value atau nilai dari fungsinya :
+1. scale(angka), scaleX(angka), scaleY(angka)
+2. rotate(deg), rotateX(deg), rotateY(deg)
+3. skew(deg), skewX(deg), skewY(deg)
+4. translate(px), translateX(px), translateY(px) */
+
+/* transform juga pemberian fungsinya bisa ditumpuk menggunakan spasi " " sama seperti filter bisa ditumpuk */
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.kotak {
+  background-color: violet;
+  height: 100px;
+  width: 100px;
+  margin: 50px auto 0;
+  transition: 1s;
+}
+
+.kotak:hover {
+  transform: scale(2) rotate(180deg);
+}

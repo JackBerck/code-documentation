@@ -1,0 +1,21 @@
+div {
+  width: 300px;
+  height: 300px;
+  background-color: #a45;
+  margin: 50px auto;
+  box-shadow: 5px 5px 5px hsla(0,0%,0%,.75);
+}
+
+/* box-shadow digunakan untuk mengatur bayangan atau memberikan bayangan pada elemen box yg diinginkan */
+
+/* value box-shadow yg utama ada 4 yaitu btw ini secara urut, <x-offset> <y-offset> <blur> <color> */
+
+/* x-offset untuk meletakkan bayangan pada sumbu x(jika positif ada dibawah dan jika negatif di atas) */
+
+/* y-offset untuk meletakkan bayangan pada sumbu y(jika positif ada dikanan dan jika negatif ada dikiri) */
+
+/* blur untuk mengatur besar bayangan */
+
+/* color untuk memberikan warna */
+
+/* blur, x, dan y valuenya yaitu px. dan sedangkan color valuenya ada rgb hexa dll biasaaaa */

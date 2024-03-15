@@ -1,0 +1,28 @@
+/* banyak sekali cara untuk menggunakan font kepada sebuah halaman website, ada yang menggunakan font-family, google fonts, dan @font-face */
+
+/* untuk penggunaan font-family sudah tahu, dan untuk yang google fonts penggunaannya sudah ada cara caranya di google fonts sendiri */
+
+/* untuk @font-face cara penggunaannya yaitu dengan cara mendownload sebuah file font lalu mengimportnya ke css kita
+1. download file lalu letakkan difolder yang diinginkan
+2. panggil atau import fontnya dengan cara memberikan 
+
+@font-face {
+  font-family: "nama-fontnya";
+  src: url('lokasi-file-fontnya.eot')
+  src: url('lokasi-file-fontnya.eot?#iefix') format('embedded-opentype'),
+       url('lokasi-file-fontnya.woff2') format('woff2'),
+       url('lokasi-file-fontnya.woff') format('woff'),
+       url('lokasi-file-fontnya.ttf') format('truetype'),
+       url('lokasi-file-fontnya.svg#svgfontName') format('svg');
+}
+
+3. pilih salah satu saja sesuai dengan format ekstensi font filenya */
+
+@font-face {
+  font-family: "VT323";
+  src: url("../../assets/CSS3/fonts/VT323/VT323-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "VT323";
+}

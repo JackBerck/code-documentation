@@ -1,0 +1,25 @@
+body {
+  background-color: lightblue;
+}
+.satu {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0,0,0,0.5);
+}
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: hsla(50,100%,50%,1);
+}
+
+/* rgba dan hsla digunakan untuk mengatur transparansi suatu warna bukan elemen maupun gambar, berbeda dengan opacity yg digunakan untuk mengatur transparansi suatu elemen */
+
+/* sehingga transparansi rgba dan hsla tidak berpengaruh ke elemen lain atau child atau parrentnya melainkan hanya warna */
+
+/* kalau opacity berpengaruh pada elemen lain atau childnya */
+
+/* yang berpengaruh pada transparansi warna hanyalah kadar a (rgb/hsl'a') */
+
+/* rgba, r untuk kadar warna merah/red(0-250), g untuk kadar warna hijau/green(0-250), b untuk kadar warna biru/blue(0-250), a untuk transparansi warna itu(0-1) */
+
+/* hsla, h/hue untuk mengatur roda warna(idk), s/saturation untuk mengatur kemurnian warna(0%-100%), l/lightness untuk mengatur pencahayaan (0%-100%), a/alpha untuk mengatur transparansi warna itu(0-1) */

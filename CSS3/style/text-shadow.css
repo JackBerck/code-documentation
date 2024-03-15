@@ -1,0 +1,27 @@
+div {
+  font-size: 100px;
+  text-align: center;
+  color: blue;
+  text-shadow: 5px 5px 5px red,
+  -5px -5px 5px green;
+}
+
+/* penggunaan text-shadow ini mirip sekali sama penggunaan box-shadow, akan tetapi text-shadow lebih simple hanya menggunakan 4 parameter atau value yaitu ada x dan y-offset, blur, color */
+
+/* selector {
+  text-shadow: x-offset y-offset blur color;
+} */
+
+/* text-shadow digunakan untuk mengatur bayangan atau memberikan bayangan pada teks yang diinginkan */
+
+/* value text-shadow yaitu btw ini secara urut, <x-offset> <y-offset> <blur> <color> */
+
+/* x-offset untuk meletakkan bayangan pada sumbu x(jika positif ada dibawah dan jika negatif di atas) */
+
+/* y-offset untuk meletakkan bayangan pada sumbu y(jika positif ada dikanan dan jika negatif ada dikiri) */
+
+/* blur untuk mengatur besar bayangan */
+
+/* color untuk memberikan warna */
+
+/* blur, x, dan y valuenya yaitu px. dan sedangkan color valuenya ada rgb hexa dll biasaaaa */

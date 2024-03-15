@@ -1,0 +1,60 @@
+/* properti transition memungkinkan kita dapat mengubah nilai dari properti html secara halus */
+
+/* transition ini hanya memiliki pergerakan dari keadaan awal ke keadaan akhir saja. sedangkan animation memiliki banyak pergerakan ada keadaan 1 ke keadaan 2 ke keadaan 3 sampai ke keadaan akhir, disetiap keadaannya disebut keyframe */
+
+/* .selector {
+  transition: [properti] <durasi> [fungsi] [delay];
+} */
+
+/* durasi adalah properti wajibnya yang harus diisi. valuenya ada s(detik/sekon) dan ms(milisekon)
+
+properti digunakan untuk mentransisikan properti mana yang akan kita pilih. valuenya ada all(semua properti ditransisikan), none(tidak ada yang ditransisikan), dan <nama-propertinua>(nama properti yang akan ditransisikan)
+
+fungsi digunakan untuk mengatur kecepatan trasisinya. valuenya ada ease(normal), ease-in(dari lambat menjadi cepat), ease-out(dari cepat menjadi lambat), ease-in-out(lambat menjadi cepat terusan lambat lagi), linear(merata/santuy), dan cubic-bezier(w,x,y,z)(penggunaannya melalui curva inspect elemen chrome)
+
+delay digunakan untuk memberikan waktu tunggu sebelum menjalankan transisi. valuenya s atau ms */
+
+/* penggunaan transisi ini bisa ditumpuk dengan menggunakan koma"," */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  margin: 5px 0;
+  text-align: center;
+  line-height: 100px;
+}
+
+.kotak1 { transition: all 3s ease; }
+.kotak2 { transition: all 3s ease-in; }
+.kotak3 { transition: all 3s ease-out; }
+.kotak4 { transition: all 3s ease-in-out; }
+.kotak5 { transition: all 3s linear; }
+.kotak6 { transition: all 3s cubic-bezier(0.1,0.2,0,0.5); }
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+.container:hover .kotak {
+  background-color: lightblue;
+  transform: rotate(360deg);
+  margin-left: 800px;
+}
+
+.container1:hover .kotak {
+  background-color: lightblue;
+  transform: rotate(360deg);
+  margin-left: 800px;
+}
+
+.a {
+  transition: margin 3s 2s, transform 3s 4s;
+}

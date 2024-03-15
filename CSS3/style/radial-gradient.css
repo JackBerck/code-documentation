@@ -1,0 +1,46 @@
+/* radial-gradient digunakan untuk memberi gradasi secara melingkar atau lingkaran */
+
+/* penggunaannya sama seperti linear-gradient hanya saja ada beberapa tambahan. radial-gradient juga bukan merupakan properti css3 melainkan hanya value dari background-image */
+
+/* sintaks sederhanya seperti ini
+.selector {
+  background-image: radial-gradient(<warna-awal atau warna-pusat>, <warna-akhir atau warna-tepi>);
+}
+
+.contoh {
+  background-image: radial-gradient(red, blue);
+}
+
+kita juga bisa memberikan multiple color seperti linear-gradient dengan menambahkan "," */
+
+/* sama seperti linear-gradient juga, kita bisa memberikan color stop pada warnanya
+.contoh {
+  background-image: radial-gradient(red 120%, blue 30%, violet 80%);
+} */
+
+/* untuk sintaks lengkapnya yaitu
+.lengkap {
+  background-image: radial-gradient(
+  <tipe> <jangkauan> at <posisi-y> <posisi-x>
+  <warna-1>
+  <warna-2>
+  .....
+  <warna-n>
+  );
+} */
+
+/* untuk tipe nya ada 2, yaitu ellips(gradasinya membentuk elips atau oval) dan circle(gradasinya membentuk lingkaran). defaultnya yaitu elips */
+
+/* untuk yang jangkauan adalah jarak dari pusat gradient ke sisi terluarnya, valuenya ada 4. yaitu closest-corner(jarak dari pusat gradient ke sudut terdekat elemen), closest-side(jarak dari pusat gradient ke sisi terdekat elemen), farthest-corner(jarak dari pusat gradient ke sudut terjauh elemen), dan farthest-side(jarak dari pusat gradient ke sisi terjauh elemen) */
+
+/* posisi-y memindahkan pusat gradient secara sumbu y, valuenya ada 4, yaitu top, center, bottom, dan px */
+
+/* posisi-x memindahkan pusat gradient secara sumbu x, valuenua ada 4 yaitu right, center, left, dan px */
+
+/* dan untuk warna pemberian valuenya seperti biasa ada color dan color stopnya, sama seperti linear-gradient */
+
+div {
+  width: 600px;
+  height: 400px;
+  background-image: radial-gradient(circle closest-side, red, green);
+}

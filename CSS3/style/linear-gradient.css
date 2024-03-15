@@ -1,0 +1,29 @@
+/* linear-gradient digunakan untuk memberikan gradasi secara garis lurus, linear-gradient bukan property dari css 3 melaikan value dari background-image */
+
+/* rumus sintaksnya
+selector { background-image: linear-gradient(value); } */
+
+/* sintaks sederhananya(memberikan warna gradasinya bisa lebih dari dua warna)
+background-image: linear-gradient(<color-1>, <color-2>, <color-n>)
+
+atau bisa juga langsung background saja
+background: linear-gradient(<color-n>) */
+
+div {
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+  background-image: linear-gradient(to right, red 63%, blue 80%);
+}
+
+/* untuk sintaks lengkapnya yaitu
+background-image: linear-gradient(<arah> | <sudut>, <color awal>, <color akhir>) */
+
+/* untuk parameter sudut atau arah.
+value untuk parameter sudut adalah besarnya sudut yang ingin dijadikan patokan(satuannya deg, degree atau derajat).
+value untuk parameter arah adalah arah gradasi warnanya, dari awal ke akhir warna gradasi, valuenya ada to top, to right, to bottom, to left, to right top, to left top, to left bottom, to right bottom. */
+
+/* kita juga bisa memberikan color stop, color stop yaitu digunakan untuk memberikan bobot dari gradasi warna, color stop ini satuannya % "persen". color stop penggunaanya di akhir warna yg akan dikasih color stop, contoh
+selector {
+  background-image: linear-gradient(to bottom, red (70%), blue(84%));
+} */
