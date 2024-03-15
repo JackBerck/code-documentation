@@ -1,0 +1,243 @@
+/* flexbox adalah model layout 1 dimensi(hanya dapat mengatur 1 dimensi pada saat tertentu, antara baris atau kolom, tidak bisa keduanya) yang dapat mengatur jarak dan penjajaran antar item didalam sebuah container */
+
+/* istilah istilah pada flexbox */
+
+/* nama nama bendanya ada container dan items, yaitu :
+container adalah pembungkus dari para items, atau bisa disebut parentnya, nantinya container ini yang akan kita setting menjadi flex atau flexbox agar elemen elemen didalamnya bisa kita atur
+items adalah elemen elemen yang berada didalam container, atau bisa disebut childs yang nantinya akan kita atur letaknya */
+
+/* macam macam sumbunya ada main axis dan cross axis, yaitu :
+main axis adalah penempatan items secara horizontal atau posisinya sejajar terhadap sumbu x(miring)
+cross axis adalah penempatan items secara vertikal atau posisinya sejajar terhadap sumbu y(tegak) */
+
+/* macam macam ukuran container ada main size dan cross sizem yaitu :
+main size adalah ukuran untuk lebarnya atau ukuran baris containernya
+cross size adalah ukuran untuk tingginya atau ukuran kolom containernya */
+
+/* macam macam pemulaian awal dan akhir elemen atau items ada main start dan main end, serta ada cross start dan cross end, yaitu:
+untuk main start dan end adalah pemulaian awal dan akhir items secara sumbu main atau sumbu x
+cross start dan end adalah pemulaian awal dan akhir items secara sumbu cross atau sumbu y */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* PROPERTI PADA CONTAINER */
+
+/* 1. display: flex | flexbox | inline-flex;
+display flex dkk ini membuat sebuah elemen menjadi flexbox, dan membuat elemen elemen didalamnya bisa berperilaku flex juga */
+
+.container {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex; 
+}
+
+.container div {
+  width: 120px;
+  height: 120px;
+  background-color: royalblue;
+  margin: 2px;
+}
+
+/* 2. flex-direction: row | row-reverse | column | column-reverse;
+flex-direction ini berguna untuk mengatur arah atau urutan dari items di dalam container, untuk row(dari kanan ke kiri), row-reverse(dari kiri ke kanan), column(dari atas ke bawah), column-reverse(dari bawah ke atas) */
+
+.containerA {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.containerA div {
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  margin: 2px;
+}
+
+/* 3. flex-wrap: nowrap | wrap | wrap-reverse;
+flex wrap, secara default semua items di dalam container akan berada pada satu baris meskipun sudah tidak cukup, wrap memungkinkan items ke baris dibawahnya, untuk nowrap(memaksa untuk satu baris), wrap(jika tidak muat items akan kebawah secara urut), wrap-reverse(jika tidak muat items akan kebawah secara terbalik urutannya) */
+
+.containerB {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.containerB div {
+  width: 120px;
+  height: 120px;
+  background-color: salmon;
+  margin: 2px;
+}
+
+/* 4. justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+justify-content berguna untuk mengatur rata dari elemen elemen didalamnya atau didalam containernya atau untuk mengatur jarak antar items, untuk flex-start(items akan rata kanan), flex-end(items akan rata kiri), center(items akan rata tengah), space-between(items kanan kiri akan mepet kanan kiri, sedangkan untuk yang lainnya akan dikasih jarak yg sama), space-around(membagi rata sisi kiri dan kanan items), space-evenly(jarak antar items sama) */
+
+.containerC {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerC div {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  margin: 2px;
+}
+
+/* 5. align-items: flex-start | flex-end | center | stretch | baseline;
+align-items digunakan untuk mengatur perilaku penjajaran items terhadap cross axis, untuk flex-start(items akan rata atas), flex-end(items akan rata bawah), center(items akan rata tengah secara sumbu y), stretch(jika items tidak dikasih height maka tinggi items akan memenuhi containernya), baseline(mengatur rata tengah akan tetapi sesuai dengan tulisannya atau content yang ada didalam items) */
+
+.containerD {
+  width: 600px;
+  height: 1000px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: baseline;
+}
+
+.containerD div {
+  width: 120px;
+  height: 120px;
+  background-color: purple;
+  margin: 2px;
+}
+
+.containerD div.a {
+  font-size: 70px;
+}
+
+.containerD div.aaa {
+  font-size: 40px;
+}
+
+/* 6. align-content: flex-start | flex-end | center | stretch | space-around | space-between
+align-content penggunaannya sama seperti align-items akan tetapi ini hanya berfungsi saat contentnya lebih dari satu baris, atau untuk mengatur jarak antar items terhadap cross axis(hanya berfungsi ketika items lebih dari 1 baris) */
+
+.containerE {
+  width: 600px;
+  height: 1000px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.containerE div {
+  width: 120px;
+  height: 120px;
+  background-color: purple;
+  margin: 2px;
+}
+
+.containerE div.o {
+  width: 150px;
+}
+
+.containerE div.ooo {
+  width: 70px;
+}
+
+.containerE div.oooo {
+  width: 180px;
+}
+
+.containerE div.ooooo {
+  width: 200px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* PROPERTI PADA ITEMS */
+
+/* 1. selector {order: 1 | 2 | <angka urutan>; }
+property order ini digunakan untuk mengatur urutan items */
+
+.containerF {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.containerF div {
+  width: 120px;
+  height: 120px;
+  background-color: purple;
+  margin: 2px;
+}
+
+.containerF div.e { order: 2; }
+
+.containerF div.ee { order: 3; }
+
+.containerF div.eee { order: 1; }
+
+/* 2. selector { flex | flex-grow: 1 | 2 | <besarnya ukuran>;}
+flex-grow atau shorthandnya flex ini digunakan untuk mengatur besarnya suatu items(besaran yg digunakan adalah kelipatan ukuran itemsnya sendiri) */
+
+.containerG {
+  width: 600px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+}
+
+.containerG div {
+  background-color: purple;
+  margin: 2px;
+}
+
+.containerG div.q { flex-grow: 2; }
+
+/* 3. selector { align-self: flex-start | flex-end | stretch | center | baseline | auto; }
+align-self ini digunakan untuk mengatur perilaku penjajaran sebuah/satu item secara spesifik terhadap cross axis atau sumbu y (penggunaannya seperti align-items akan tetapi hanya satu item) */
+
+.containerH {
+  width: 600px;
+  height: 150px;
+  border: 5px solid #333;
+  margin: 30px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+}
+
+.containerH div {
+  background-color: purple;
+  margin: 2px;
+  flex: 1;
+}
+
+.containerH div.y {
+  flex: 3;
+  align-self: center;
+}
