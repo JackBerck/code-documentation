@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Bakso Sapi';
+    src: url('../asset/BaksoSapi.woff2') format('woff2'),
+        url('../asset/BaksoSapi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

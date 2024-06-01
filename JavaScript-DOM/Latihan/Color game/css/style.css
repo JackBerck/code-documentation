@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bakso Sapi', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+}
+
+.color {
+  background: transparent;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+
+/* UI UX DESIGN */
+
+.container {
+  background-color: grey;
+  /* height: 90%; */
+  height: 520px;
+  /* width: 80%; */
+  width: 300px;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+button {
+  background: none;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 150px;
+  padding: 5px;
+}
+
+.square {
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 20px auto;
+  color: #fff;
+}
+
+button {
+  margin: 5px auto;
+}
+
+input {
+  margin-bottom: 20px;
+}

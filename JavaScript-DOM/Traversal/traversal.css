@@ -1,0 +1,66 @@
+body {
+    margin: 50px;
+    font-family: arial;
+    background-color: #666;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+.card {
+    display: inline-block;
+    width: 220px;
+    padding: 0 80px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 80px;
+    border-radius: 40px;
+    background-color: #f1f1f1;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    float: left;
+    margin: 0 10px 0 -80px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card .nama, .card .telp {
+    display: block;
+    line-height: 20px;
+    padding: 0 5px;
+}
+
+.card .nama {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.card .telp {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.card .close {
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    cursor: pointer;
+}
+
+.card:hover .close {
+    color: red;
+}
