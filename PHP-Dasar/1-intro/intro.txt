@@ -1,0 +1,167 @@
+## Pengantar PHP
+
+### Apa itu PHP?
+PHP (Hypertext Preprocessor) adalah bahasa scripting server-side yang terutama digunakan untuk pengembangan web. PHP adalah bahasa open-source yang sangat populer dan dapat tertanam dalam HTML. Artinya, Anda dapat menulis kode PHP di dalam file HTML, yang memungkinkan pengembang untuk menghasilkan konten web dinamis dengan mudah.
+
+### Sejarah Singkat PHP
+PHP pertama kali dibuat oleh Rasmus Lerdorf pada tahun 1994 sebagai serangkaian skrip Perl untuk melacak pengunjung ke halaman pribadinya. Seiring waktu, proyek ini berkembang menjadi bahasa scripting yang lengkap dan pada tahun 1995, Rasmus merilis PHP/FI (Form Interpreter), yang merupakan versi pertama dari PHP. Sejak itu, PHP telah berkembang pesat dengan banyak fitur baru dan pembaruan hingga menjadi salah satu bahasa yang paling umum digunakan dalam pengembangan web saat ini.
+
+### Mengapa Menggunakan PHP?
+1. **Mudah Dipelajari**: PHP memiliki sintaks yang mirip dengan bahasa pemrograman lain seperti C dan Perl, membuatnya mudah dipelajari bagi pemula.
+2. **Open Source**: PHP adalah proyek open-source, sehingga gratis untuk digunakan dan memiliki komunitas besar yang terus memperbarui dan meningkatkan fungsionalitasnya.
+3. **Portabilitas**: PHP dapat berjalan di berbagai sistem operasi, termasuk Windows, Linux, dan macOS, serta mendukung berbagai jenis server web.
+4. **Integrasi Mudah**: PHP dapat dengan mudah diintegrasikan dengan berbagai database seperti MySQL, PostgreSQL, Oracle, dan banyak lainnya.
+5. **Banyak Framework dan CMS**: PHP memiliki banyak framework dan Content Management Systems (CMS) populer seperti Laravel, Symfony, WordPress, dan Joomla, yang mempercepat proses pengembangan.
+
+### Struktur Dasar PHP
+PHP dapat ditanamkan langsung ke dalam HTML. Berikut adalah contoh sederhana bagaimana PHP bekerja:
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh PHP</title>
+</head>
+<body>
+    <h1>Halo, Dunia!</h1>
+    <?php
+        echo "Ini adalah skrip PHP!";
+    ?>
+</body>
+</html>
+```
+
+### Sintaks Dasar PHP
+1. **Komentar**: 
+   ```php
+   // Ini adalah komentar satu baris
+   # Ini adalah komentar satu baris lain
+   /*
+      Ini adalah komentar
+      multi-baris
+   */
+   ```
+
+2. **Variabel**: 
+   ```php
+   $nama = "Zaki";
+   $umur = 21;
+   ```
+
+3. **Tipe Data**:
+   - String: `"$nama"`
+   - Integer: `21`
+   - Float: `3.14`
+   - Boolean: `true` atau `false`
+   - Array: `array("satu", "dua", "tiga")`
+   - Object dan Null
+
+4. **Operasi Dasar**: 
+   ```php
+   $jumlah = 5 + 3;
+   $produk = 5 * 3;
+   ```
+
+### Fungsi PHP
+Fungsi adalah blok kode yang dapat digunakan kembali. Berikut adalah contoh fungsi sederhana dalam PHP:
+
+```php
+function sapa($nama) {
+    return "Halo, " . $nama . "!";
+}
+
+echo sapa("Zaki");
+```
+
+### CRUD (Create, Read, Update, Delete) dalam PHP
+
+CRUD adalah operasi dasar yang biasanya dilakukan pada basis data. Berikut adalah implementasi CRUD menggunakan PHP dan MySQL.
+
+#### 1. Koneksi ke Database
+Pertama, kita perlu membuat koneksi ke database MySQL:
+
+```php
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "database_anda";
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+?>
+```
+
+#### 2. Create (Membuat Data)
+Untuk menambahkan data ke database:
+
+```php
+<?php
+$sql = "INSERT INTO pengguna (nama, email) VALUES ('Zaki', 'zaki@example.com')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Data berhasil ditambahkan!";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+?>
+```
+
+#### 3. Read (Membaca Data)
+Untuk membaca data dari database:
+
+```php
+<?php
+$sql = "SELECT id, nama, email FROM pengguna";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Menampilkan data dalam bentuk tabel
+    while($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["id"]. " - Nama: " . $row["nama"]. " - Email: " . $row["email"]. "<br>";
+    }
+} else {
+    echo "0 hasil";
+}
+?>
+```
+
+#### 4. Update (Memperbarui Data)
+Untuk memperbarui data di database:
+
+```php
+<?php
+$sql = "UPDATE pengguna SET email='zaki_baru@example.com' WHERE nama='Zaki'";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Data berhasil diperbarui!";
+} else {
+    echo "Error updating record: " . $conn->error;
+}
+?>
+```
+
+#### 5. Delete (Menghapus Data)
+Untuk menghapus data dari database:
+
+```php
+<?php
+$sql = "DELETE FROM pengguna WHERE nama='Zaki'";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Data berhasil dihapus!";
+} else {
+    echo "Error deleting record: " . $conn->error;
+}
+?>
+```
+
+### Kesimpulan
+PHP adalah bahasa yang kuat dan fleksibel untuk pengembangan web. Dengan kemampuan untuk berinteraksi dengan database, membuat konten dinamis, dan dukungan komunitas yang besar, PHP tetap menjadi pilihan populer bagi banyak pengembang web. Memahami dasar-dasar PHP serta operasi CRUD akan memberikan fondasi yang kuat untuk pengembangan aplikasi web yang kompleks.
+
+Jika ada bagian spesifik yang ingin dijelaskan lebih dalam, jangan ragu untuk bertanya!
