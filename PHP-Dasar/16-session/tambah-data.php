@@ -1,5 +1,12 @@
 <?php
+session_start();
 require "functions.php";
+
+// cek apakah user sudah login atau belum menggunakan session
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
 
 // cek apakah tombol tambah sudah dipencet atau belum
 if (isset($_POST["tambah"])) {

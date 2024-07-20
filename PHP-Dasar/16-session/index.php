@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+// cek apakah user sudah login atau belum menggunakan session
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
+
 // Agar sintaks php mudah untuk dibaca maka gunakan sintaks php yang lebih modern sehingga disarankan untuk memodularisasi file
 // Agar file ini dapat terhubung dengan file functions.php maka gunakan sintaks require
 require 'functions.php';
@@ -19,6 +27,7 @@ if (isset($_POST["cari"])) {
 </head>
 
 <body>
+    <a href="logout.php">Logout</a>
     <h1>Daftar Mahasiswa</h1>
     <a href="tambah-data.php">Tambah data mahasiswa</a>
     <form action="" method="post">

@@ -1,5 +1,15 @@
 <?php
+// jika ingin menggunakan session, harus memulai session terlebih dahulu
+// fungsi session_start() harus diletakkan di awal file sebelum tag html atau teks fungsinya adalah untuk memulai session pada halaman
+session_start();
 require 'functions.php';
+
+// cek apakah user sudah login atau belum menggunakan session
+// isset() digunakan untuk mengecek apakah session login sudah ada atau belum
+if (isset($_SESSION["login"])) {
+    header("Location: index.php");
+    exit;
+}
 
 // cek apakah tombol login sudah ditekan atau belum
 if (isset($_POST['login'])) {
@@ -16,6 +26,9 @@ if (isset($_POST['login'])) {
         // password_verify digunakan untuk mengecek apakah password yang diinputkan sama dengan password yang ada di database atau password yang sudah dienkripsi
         // rumus password_verify($password_yang_diinputkan, $row['password_yang_ada_di_database'])
         if (password_verify($password, $row['password'])) {
+            // set session
+            // $_SESSION adalah variabel global yang bisa digunakan untuk menyimpan data agar bisa digunakan di halaman lain
+            $_SESSION['login'] = true;
             header('Location: index.php');
             exit;
         }
