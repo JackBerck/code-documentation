@@ -1,0 +1,19 @@
+Cookie dan session adalah dua mekanisme yang digunakan dalam pengembangan web untuk menyimpan data di sisi server dan mengidentifikasi pengguna.
+
+Cookie adalah file teks kecil yang disimpan di SISI KLIEN (misalnya, browser pengguna) dan digunakan untuk menyimpan informasi tertentu. Cookie dapat digunakan untuk menyimpan preferensi pengguna, informasi login, atau data lain yang relevan. Cookie dikirim dari server ke klien melalui header HTTP dan kemudian dikirim kembali ke server setiap kali klien membuat permintaan ke server yang sama. Cookie dapat memiliki waktu kadaluwarsa tertentu atau dapat diatur untuk berlaku selamanya.
+
+Session, di sisi lain, adalah mekanisme yang digunakan untuk menyimpan data di SISI SERVER. Setiap kali pengguna mengakses situs web, server akan membuat sesi unik untuk pengguna tersebut. Data yang terkait dengan sesi tersebut disimpan di server dan diakses melalui ID sesi yang dikirim ke klien dalam bentuk cookie atau parameter URL. Data sesi dapat digunakan untuk menyimpan informasi pengguna yang sensitif, seperti informasi login, keranjang belanja, atau preferensi pengguna.
+
+Perbedaan utama antara cookie dan session adalah tempat penyimpanan datanya. Cookie disimpan di sisi klien, sedangkan session disimpan di sisi server. Karena cookie disimpan di sisi klien, mereka dapat diakses dan dimanipulasi oleh pengguna. Oleh karena itu, cookie lebih rentan terhadap serangan keamanan. Di sisi lain, session lebih aman karena data disimpan di server.
+
+Kegunaan cookie dan session adalah untuk menyimpan data pengguna di web. Cookie sering digunakan untuk mengingat preferensi pengguna, seperti bahasa yang dipilih atau tema yang disukai. Session digunakan untuk menyimpan data yang lebih sensitif dan penting, seperti informasi login atau keranjang belanja.
+
+Apakah ada yang bisa saya bantu?Cookie dan session adalah dua mekanisme yang digunakan dalam pengembangan web untuk menyimpan data di sisi server dan mengidentifikasi pengguna.
+
+Cookie adalah file teks kecil yang disimpan di sisi klien (misalnya, browser pengguna) dan digunakan untuk menyimpan informasi tertentu. Cookie dapat digunakan untuk menyimpan preferensi pengguna, informasi login, atau data lain yang relevan. Cookie dikirim dari server ke klien melalui header HTTP dan kemudian dikirim kembali ke server setiap kali klien membuat permintaan ke server yang sama. Cookie dapat memiliki waktu kadaluwarsa tertentu atau dapat diatur untuk berlaku selamanya.
+
+Session, di sisi lain, adalah mekanisme yang digunakan untuk menyimpan data di sisi server. Setiap kali pengguna mengakses situs web, server akan membuat sesi unik untuk pengguna tersebut. Data yang terkait dengan sesi tersebut disimpan di server dan diakses melalui ID sesi yang dikirim ke klien dalam bentuk cookie atau parameter URL. Data sesi dapat digunakan untuk menyimpan informasi pengguna yang sensitif, seperti informasi login, keranjang belanja, atau preferensi pengguna.
+
+Perbedaan utama antara cookie dan session adalah tempat penyimpanan datanya. Cookie disimpan di sisi klien, sedangkan session disimpan di sisi server. Karena cookie disimpan di sisi klien, mereka dapat diakses dan dimanipulasi oleh pengguna. Oleh karena itu, cookie lebih rentan terhadap serangan keamanan. Di sisi lain, session lebih aman karena data disimpan di server.
+
+Kegunaan cookie dan session adalah untuk menyimpan data pengguna di web. Cookie sering digunakan untuk mengingat preferensi pengguna, seperti bahasa yang dipilih atau tema yang disukai. Session digunakan untuk menyimpan data yang lebih sensitif dan penting, seperti informasi login atau keranjang belanja.
