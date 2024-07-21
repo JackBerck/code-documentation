@@ -1,0 +1,26 @@
+AJAX (Asynchronous JavaScript and XML) adalah teknik pengembangan web yang memungkinkan komunikasi antara browser dan server secara asynchronous. Dengan menggunakan AJAX, Anda dapat mengirim dan menerima data dari server tanpa harus memuat ulang halaman web secara keseluruhan.
+
+Teknik ini sangat berguna dalam membangun aplikasi web yang responsif dan interaktif. Dengan AJAX, Anda dapat mengirim permintaan ke server dan menerima responsnya secara asynchronous, sehingga pengguna tidak perlu menunggu lama untuk melihat hasilnya.
+
+Pada dasarnya, AJAX menggunakan JavaScript untuk mengirim permintaan HTTP ke server dan menerima responsnya. Data yang dikirim dan diterima dapat berupa format XML, tetapi sekarang lebih umum menggunakan format JSON atau plain text.
+
+Berikut adalah contoh sederhana penggunaan AJAX dalam JavaScript:
+
+
+
+// Membuat objek XMLHttpRequest
+var xhr = new XMLHttpRequest();
+
+// Mengatur callback function untuk menangani respons dari server
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        // Respons dari server berhasil diterima
+        var response = xhr.responseText;
+        // Lakukan sesuatu dengan respons tersebut
+        console.log(response);
+    }
+};
+
+// Mengirim permintaan GET ke server
+xhr.open("GET", "https://example.com/data", true);
+xhr.send();
