@@ -1,0 +1,1 @@
+Folder publik digunakan sebagai tempat penyimpanan aset statis yang akan diakses langsung oleh pengguna melalui browser. Aset-aset ini tidak memerlukan pemrosesan khusus oleh server dan bisa langsung disajikan.
