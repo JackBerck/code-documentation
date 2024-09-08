@@ -1,6 +1,6 @@
 # Dokumentasi Pribadi - Belajar Pemrograman
 
-Selamat datang di repository dokumentasi pribadi saya! Dokumentasi ini merupakan hasil karya original saya, dihimpun dari berbagai sumber sejak tahun 2020. Sumber utama yang banyak berkontribusi dalam pembuatan dokumentasi ini antara lain Web Programming UNPAS (WPU), ChatGPT, W3Schools, dan lain-lain.
+Selamat datang di repository dokumentasi pribadi saya! Dokumentasi ini merupakan hasil karya original saya, dihimpun dari berbagai sumber sejak tahun 2020. Sumber utama yang banyak berkontribusi dalam pembuatan dokumentasi ini antara lain Web Programming UNPAS (WPU), Kelas Terbuka, Programmer Zaman Now, ChatGPT, W3Schools, dan lain-lain.
 
 Repository ini dibuat sebagai referensi dasar pembelajaran untuk perkuliahan dan pengembangan diri. Harapannya, dokumentasi ini dapat membantu dalam memahami konsep dasar pemrograman dan teknologi yang relevan.
 
