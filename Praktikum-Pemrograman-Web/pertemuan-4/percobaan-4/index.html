@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percobaan 4 - Mouse Event</title>
+  </head>
+  <body>
+    <img
+      src="./image.jpg"
+      alt="Alternate"
+      style="width: 100px; height: 100px"
+      onmouseover="gantiGambar1()"
+      onmouseout="gantiGambar2()"
+    />
+    <script>
+      function gantiGambar1() {
+        document.querySelector("img").src = "./image2.jpg";
+      }
+
+      function gantiGambar2() {
+        document.querySelector("img").src = "./image.jpg";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percobaan 5 - External Style Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="proses.php" method="post" name="form">
+      <table>
+        <tr>
+          <td class="kolom1">Nama</td>
+          <td class="kolom2">:</td>
+          <td class="kolom3">
+            <input type="text" name="txtNama" id="txtNama" />
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">Tgl Lahir</td>
+          <td class="kolom2">:</td>
+          <td class="kolom3">
+            <input type="text" name="txtTgl" id="txtTgl" maxlength="2" />
+            <input type="text" name="txtBulan" id="txtBulan" maxlength="2" />
+            <input type="text" name="txtTahun" id="txtTahun" maxlength="4" />
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">Alamat</td>
+          <td class="kolom2">&nbsp;:</td>
+          <td class="kolom3">
+            <textarea name="txtAlamat" id="txtAlamat"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">Kota</td>
+          <td class="kolom2">:</td>
+          <td class="kolom3">
+            <input type="tetx" name="txtKota" id="txtKota" />
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">&nbsp;</td>
+          <td class="kolom2">&nbsp;</td>
+          <td class="kolom3">
+            <input type="submit" value="Kirim" name="btnKirim" id="btnKirim" />
+            <input type="rest" name="btnCancel" value="Cancel" id="btnCancel" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

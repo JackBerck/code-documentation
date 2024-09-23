@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percobaan 6 - Character Counter</title>
+  </head>
+  <body>
+    <form action="" name="form1" method="post">
+      <textarea
+        name="question"
+        id="question"
+        cols="60"
+        rows="3"
+        onkeyup="countMax()"
+      ></textarea>
+      Sisa karakter:
+      <input
+        type="text"
+        name="counter"
+        id="counter"
+        size="3"
+        maxlength="3"
+        value="100"
+        readonly
+      />
+    </form>
+    <script>
+      function countMax() {
+        const question = document.getElementById("question");
+        const counter = document.getElementById("counter");
+        const max = 100;
+        const count = max - question.value.length;
+        if (count < 0) {
+          question.value = question.value.substring(0, max);
+          counter.value = 0;
+        } else {
+          counter.value = count;
+        }
+      }
+    </script>
+  </body>
+</html>

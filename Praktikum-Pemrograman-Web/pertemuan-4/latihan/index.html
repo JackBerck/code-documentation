@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+  </head>
+  <body>
+    <form action="" method="post" name="form">
+      <table>
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td><input type="text" name="nama" id="nama" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="email" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>Komentar</td>
+          <td>:</td>
+          <td>
+            <textarea
+              name="komentar"
+              id="komentar"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Kirim" name="kirim" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      document.form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let nama = document.getElementById("nama").value;
+        let email = document.getElementById("email").value;
+        let komentar = document.getElementById("komentar").value;
+        const namaRegex = /^[A-Za-z\s]+$/;
+
+        if (!namaRegex.test(nama)) {
+          alert("Nama tidak boleh mengandung angka atau simbol!");
+          return false;
+        }
+        if (nama == "" || email == "" || komentar == "") {
+          alert("Data tidak boleh kosong!");
+          return false;
+        } else {
+          alert("Data berhasil dikirim!");
+          return true;
+        }
+      });
+    </script>
+  </body>
+</html>

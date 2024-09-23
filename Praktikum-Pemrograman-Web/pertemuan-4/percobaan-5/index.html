@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percobaan 5 - Validasi Form</title>
+  </head>
+  <body>
+    <form action="" method="post" name="formbuku" onsubmit="return cek()">
+      <table>
+        <tr>
+          <td>Nama</td>
+          <td><input type="text" id="fieldNama" name="nama" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Kirim" name="kirim" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function cek() {
+        const fieldNama = document.getElementById("fieldNama");
+        if (fieldNama.value == "") {
+          alert("Nama harus diisi!");
+          fieldNama.focus();
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

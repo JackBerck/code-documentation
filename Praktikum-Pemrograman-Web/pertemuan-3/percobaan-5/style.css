@@ -1,0 +1,45 @@
+h2 {
+  font-family: "Cosmic Sans MS", sans-serif;
+  background-color: red;
+  text-align: center;
+}
+
+table {
+  background: gray;
+  margin: 0 auto;
+  padding: 5px;
+  width: 68%;
+  border-width: 0px;
+}
+
+.kolom1 {
+  font-weight: bold;
+  width: 15%;
+}
+
+.kolom2 {
+  width: 2%;
+}
+
+.kolom3 {
+  width: 83%;
+}
+
+#txtNama,
+#txtKota {
+  width: 186px;
+}
+
+#txtTgl,
+#txtBulan {
+  width: 54px;
+}
+
+#txtTahun {
+  width: 87px;
+}
+
+#txtAlamat {
+  width: 346px;
+  height: 46px;
+}
