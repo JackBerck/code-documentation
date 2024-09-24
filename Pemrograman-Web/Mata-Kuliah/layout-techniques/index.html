@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <style>
+      .testimonial {
+        text-align: center;
+        margin: 0 15px;
+      }
+      .testimonial .description {
+        padding: 15px;
+        margin: 0;
+        border-top: 4px solid #a762cf;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        line-height: 30px;
+        position: relative;
+      }
+      .testimonial .description:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #a762cf;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+      }
+      .testimonial .pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 40px auto;
+      }
+      .testimonial .pic img {
+        width: 100%;
+        height: auto;
+      }
+      .testimonial .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+      }
+      .testimonial .post {
+        display: block;
+        font-size: 14px;
+      }
+      .owl-theme .owl-controls {
+        margin-top: 30px;
+      }
+      .owl-theme .owl-controls .owl-page span {
+        background: #ccc;
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+      }
+      .owl-theme .owl-controls .owl-page.active span,
+      .owl-theme .owl-controls.clickable .owl-page:hover span {
+        background: #a762cf;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container justify-content-between">
+        <a class="navbar-brand" href="#hero"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Seal_of_the_Federal_Bureau_of_Investigation.svg/210px-Seal_of_the_Federal_Bureau_of_Investigation.svg.png"
+            alt="Code icon"
+            class="w-25"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex flex-row-reverse"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#hero"
+              >Tentang Osama</a
+            >
+            <a class="nav-link" href="#activities">Aktivitas dan Pengaruh</a>
+            <a class="nav-link" href="#impact">Kematian dan Dampaknya</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Bar End -->
+    <!-- Hero Start -->
+    <section id="hero">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="https://github.com/JackBerck/code-documentation/blob/master/assets/images/osama-bin-laden.png?raw=true"
+              class="d-block mx-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="480"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <h1 class="text-capitalize lh-1 my-3 fw-bold">Osama bin Laden</h1>
+            <h2 class="fs-4 fw-semibold">
+              Sosok Kontroversial dalam Sejarah Modern
+            </h2>
+            <p class="lead">
+              Osama bin Laden, sosok yang dikenal sebagai arsitek di balik
+              tragedi 9/11, meninggalkan jejak mendalam dalam sejarah modern.
+              Dari awal yang sederhana hingga menjadi pemimpin jaringan teroris
+              global Al-Qaeda, warisannya penuh kontroversi dan perdebatan.
+            </p>
+            <a
+              href="https://id.wikipedia.org/wiki/Usamah_bin_Ladin"
+              class="btn btn-info fw-semibold"
+              >Kenali lebih jauh</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Activity and Influence Start -->
+    <section id="activities">
+      <div class="container">
+        <h2 class="text-lg-center mt-5 mb-2 fw-bold">
+          Peran dalam Al-Qaeda dan Terorisme Global
+        </h2>
+        <p class="lead text-lg-center">
+          Osama bin Laden adalah pendiri Al-Qaeda, organisasi teroris yang
+          bertanggung jawab atas sejumlah serangan di seluruh dunia, termasuk
+          tragedi 9/11. Pengaruhnya dalam gerakan jihad global menjadikannya
+          salah satu tokoh yang paling dicari di dunia selama lebih dari satu
+          dekade. Melalui propaganda, pelatihan, dan koordinasi serangan, ia
+          berhasil menyebarkan ideologi ekstremis yang berdampak pada politik
+          global hingga saat ini.
+        </p>
+
+        <div class="row text-lg-center my-2">
+          <div class="col-md-4">
+            <div class="p-3 border bg-light">
+              <h4 class="fw-semibold">Pembentukan Al-Qaeda</h4>
+              <p>
+                1988: Osama bin Laden mendirikan Al-Qaeda dengan tujuan
+                menyebarkan jihad global.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 border bg-light">
+              <h4 class="fw-semibold">Serangan 9/11</h4>
+              <p>
+                2001: Al-Qaeda melancarkan serangan teroris terbesar dalam
+                sejarah modern, menghancurkan World Trade Center di New York.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 border bg-light">
+              <h4 class="fw-semibold">Jihad Global</h4>
+              <p>
+                Osama bin Laden mempengaruhi dan menginspirasi berbagai kelompok
+                teroris lainnya di seluruh dunia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/icX6FjyV-p0?si=imoz4Sa1v6FqEECl"
+                title="YouTube video"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Activity and Influence End -->
+    <!-- Impact Start -->
+    <section id="impact" class="bg-dark text-light py-3">
+      <div class="container">
+        <h2 class="text-lg-center mt-5 fw-bold">
+          Operasi Neptune Spear dan Kematian Osama bin Laden
+        </h2>
+        <p class="lead text-lg-center">
+          Pada tanggal 2 Mei 2011, operasi militer Amerika Serikat yang dikenal
+          dengan nama Operasi Neptune Spear berhasil menewaskan Osama bin Laden
+          di Abbottabad, Pakistan. Kematian sosok ini menandai berakhirnya salah
+          satu perburuan teroris paling intens dalam sejarah. Dunia menyambut
+          kabar ini dengan berbagai reaksi, dari rasa lega hingga munculnya
+          kekhawatiran akan tindak balas dendam. Kematian bin Laden mempengaruhi
+          dinamika keamanan global dan meninggalkan warisan kompleks yang terus
+          dipelajari hingga kini.
+        </p>
+        <div class="row text-center my-5">
+          <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                <p class="description">
+                  "Kematian Osama bin Laden adalah kemenangan besar dalam perang
+                  melawan terorisme, tetapi bukan akhir dari ancaman yang
+                  dihadapi dunia."
+                </p>
+                <div class="pic">
+                  <img
+                    src="https://www.whitehouse.gov/wp-content/uploads/2021/01/44_barack_obama.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="post">Presiden Barrack Obama</span>
+              </div>
+              <div class="testimonial">
+                <p class="description">
+                  "Bin Laden mungkin telah mati, tetapi ideologinya masih hidup,
+                  dan kita harus tetap waspada."
+                </p>
+                <div class="pic">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/67/Fumio_Kishida_met_with_Jens_Stoltenberg_at_the_sidelines_of_2022_Madrid_Summit_%281%29_%28cropped%29.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="post">Sekretaris Jenderal NATO</span>
+              </div>
+              <div class="testimonial">
+                <p class="description">
+                  "Dampak dari kematian bin Laden adalah pengingat bahwa
+                  terorisme global tetap menjadi ancaman yang harus dihadapi
+                  bersama."
+                </p>
+                <div class="pic">
+                  <img
+                    src="https://yt3.googleusercontent.com/y_esGAQOhX4rTpWvrALErAJlFbm_2TIVrvcVfcZny7TuA8dJZgOQcC6KRfd_J5hljFe-foYXj9U=s900-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                  />
+                </div>
+                <span class="post">Jurnalis BBC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center my-5 text-dark">
+          <div class="col-md-6">
+            <div class="p-3 border bg-light">
+              <h4 class="fw-semibold">Pengurangan Serangan Teroris</h4>
+              <p>
+                Sejak kematian Osama bin Laden, jumlah serangan teroris yang
+                berhasil digagalkan oleh intelijen global meningkat hingga 25%.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 border bg-light">
+              <h4 class="fw-semibold">Dampak pada Al-Qaeda</h4>
+              <p>
+                Kematian bin Laden melemahkan jaringan Al-Qaeda, namun berbagai
+                cabangnya tetap aktif dan menjadi ancaman serius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Impact End -->
+    <!-- Footer Start -->
+    <footer class="py-2">
+      <div class="container">
+        <div class="col-lg-4 text-lg-end mx-auto">
+          <p class="mb-0 text-center">
+            &copy; 2024
+            <a
+              href="https://www.fbi.gov/history/famous-cases/osama-bin-laden"
+              target="_blank"
+              >FBI</a
+            >. Semua hak dilindungi.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#testimonial-slider").owlCarousel({
+          items: 3,
+          itemsDesktop: [1000, 3],
+          itemsDesktopSmall: [990, 2],
+          itemsTablet: [768, 2],
+          itemsMobile: [650, 1],
+          pagination: true,
+          navigation: false,
+          autoPlay: true,
+        });
+      });
+    </script>
+  </body>
+</html>
