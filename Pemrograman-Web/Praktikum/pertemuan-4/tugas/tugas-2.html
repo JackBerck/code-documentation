@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="nilai">Masukkan nilai</label>
+      <input type="number" name="nilai" id="nilai" />
+    </form>
+    <p>Nilai anda adalah: <span id="hasil"></span></p>
+
+    <script>
+      const nilai = document.getElementById("nilai");
+      const hasil = document.getElementById("hasil");
+
+      nilai.addEventListener("input", () => {
+        const value = nilai.value;
+
+        if (value > 80) hasil.textContent = "A";
+        else if (value > 60) hasil.textContent = "B";
+        else if (value > 40) hasil.textContent = "C";
+        else if (value > 20) hasil.textContent = "D";
+        else hasil.textContent = "E";
+      });
+    </script>
+  </body>
+</html>

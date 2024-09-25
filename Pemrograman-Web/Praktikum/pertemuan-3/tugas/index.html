@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Free Registration</h2>
+    <form method="post" name="form" action="proses.php">
+      <table>
+        <tr>
+          <td class="kolom1">Nama</td>
+          <td class="kolom2">:</td>
+          <td class="kolom3">
+            <input type="text" name="txtNama" id="txtNama" />
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">Tanggal Lahir</td>
+          <td class="kolom2">:</td>
+          <td class="kolom3">
+            <input
+              type="text"
+              name="txtTgl"
+              id="txtTgl"
+              maxlength="2"
+              placeholder="DD"
+            />
+            <input
+              type="text"
+              name="txtBulan"
+              id="txtBulan"
+              maxlength="2"
+              placeholder="MM"
+            />
+            <input
+              type="text"
+              name="txtTahun"
+              id="txtTahun"
+              maxlength="4"
+              placeholder="YYYY"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="kolom1">Alamat</td>
+          <td>&nbsp;</td>
+          <td><textarea name="txtAlamat" id="txtAlamat"></textarea></td>
+        </tr>
+        <tr>
+          <td class="kolom1">Kota</td>
+          <td>:</td>
+          <td><input name="txtKota" type="text" id="txtKota" /></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+            <input type="submit" name="btnKirim" id="btnKirim" value="Kirim" />
+            <input
+              type="reset"
+              name="btnCancel"
+              id="btnCancel"
+              value="Cancel"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+  background-color: blue;
+}
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: red;
+  text-align: center;
+}
+
+table {
+  background: grey;
+  margin: 0 auto;
+  padding: 5px;
+  width: 68%;
+  border: 10px ridge magenta;
+}
+
+.kolom1 {
+  font-weight: bold;
+  width: 15%;
+}
+
+.kolom2 {
+  width: 2%;
+}
+
+.kolom3 {
+  width: 83%;
+}
+
+#txtNama,
+#txtKota {
+  width: 186px;
+}
+
+#txtTgl,
+#txtBulan {
+  width: 54px;
+}
+
+#txtAlamat {
+  width: 346px;
+  height: 42px;
+}
+
+input[name="btnCancel"] {
+  background-color: yellow;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[name="btnKirim"] {
+  background-color: greenyellow;
+  padding: 6px 12px;
+  border: 2px groove black;
+  border-radius: 4px;
+}

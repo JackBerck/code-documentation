@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="num1">Masukkan angka 1:</label>
+      <input type="number" name="num1" id="num1" />
+      <br />
+      <br />
+      <label for="num2">Masukkan angka 2:</label>
+      <input type="number" name="num2" id="num2" />
+      <br />
+      <br />
+      <button type="button">+</button>
+      <button type="button">-</button>
+      <button type="button">*</button>
+      <button type="button">/</button>
+      <button type="button">%</button>
+      <br />
+      <br />
+      <label for="result">Hasil:</label>
+      <input type="text" name="result" id="result" readonly />
+    </form>
+    <script>
+      const num1 = document.getElementById("num1");
+      const num2 = document.getElementById("num2");
+      const result = document.getElementById("result");
+      const buttons = document.querySelectorAll("button");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          const operator = e.target.textContent;
+          let num1Value = parseFloat(num1.value);
+          let num2Value = parseFloat(num2.value);
+          let hasil;
+
+          switch (operator) {
+            case "+":
+              hasil = num1Value + num2Value;
+              break;
+            case "-":
+              hasil = num1Value - num2Value;
+              break;
+            case "*":
+              hasil = num1Value * num2Value;
+              break;
+            case "/":
+              hasil = num1Value / num2Value;
+              break;
+            case "%":
+              hasil = num1Value % num2Value;
+              break;
+            default:
+              break;
+          }
+
+          result.value = hasil;
+        });
+      });
+    </script>
+  </body>
+</html>
